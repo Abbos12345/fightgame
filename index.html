@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image" href="https://i.pinimg.com/originals/15/4e/5e/154e5ef33e26be22e32c96211ec9f461.jpg"> -->
+    <link rel="icon" href="https://i.pinimg.com/originals/15/4e/5e/154e5ef33e26be22e32c96211ec9f461.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <!-- container -->
+    <div class="container" style="position: relative; width: 1024px;">
+
+        <!-- sub-container -->
+        <div style="display: inline-block; position: absolute; display: flex; width: 1024px; justify-content: center; align-items: center;">
+            <!-- health bar - player-1 -->
+            <div style="display: flex; justify-content: flex-end; position: relative; width: 200px; height: 40px;" >
+                <div style="background-color: grey; height: 40px; width: 100%;"></div>
+                <div id="player-one__health" style="position: absolute; 
+                            background-color: red; 
+                            width: 0;
+                            top: 0; 
+                            left: 0; 
+                            right: 0; 
+                            bottom: 0;
+                            width: 100%;">
+                </div>
+            </div>
+
+            <!-- timer -->
+            <div id="timer"
+                style="
+                background-color: green; 
+                width: 80px; 
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                font-weight: 600;
+                color: #fff;
+            ">
+                
+            </div>
+
+            <!-- health bar - player-2 -->
+            <div style="position: relative; width: 200px; height: 40px;">
+                <div style="background-color: grey; height: 40px;"></div>
+                <div id="player-two__health" style="position: absolute; 
+                            background-color: blue; 
+                            width: 0;
+                            top: 0; 
+                            left: 0; 
+                            right: 0; 
+                            bottom: 0;
+                            width: 100%;">
+                </div>
+            </div>
+            
+        </div>
+        <div id="result" 
+            style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #fff;
+            display: none;
+        "></div>
+        <canvas></canvas>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+   
+</body>
+</html>
